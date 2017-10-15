@@ -33,7 +33,27 @@ else
 }
 
 }
-cout<<k[n][w];
+cout<<"Maximum thief can take is :"<<k[n][w]<<endl;
+
+
+int c=w;
+i=n;
+while(i>0)
+{
+if(k[i][c]==k[i-1][c])
+{
+i=i-1;
+}
+else
+{
+
+c=c-weight[i-1];
+cout<<"Weight: "<<weight[i-1]<<"Value :"<<cost[i-1]<<endl;
+i=i-1;
+}}
+
+
+
 }
 
 
